@@ -4,5 +4,5 @@
 class Utils
 {
     public:
-        static void scale_bitmap(wxBitmap &bitmap, int x, int y);
+        static wxBitmap scale_bitmap(wxBitmap bitmap, int x, int y);
 };

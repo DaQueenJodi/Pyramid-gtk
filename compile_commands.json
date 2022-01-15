@@ -1,12 +1,25 @@
 [
   {
+    "arguments": [
+      "/usr/bin/g++",
+      "-Iinclude/",
+      "-I/usr/local/lib/wx/include/gtk3-unicode-3.1",
+      "-I/usr/local/include/wx-3.1",
+      "-D_FILE_OFFSET_BITS=64",
+      "-DWXUSINGDLL",
+      "-D__WXGTK__",
+      "-pthread",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "-o",
+      "src/cMain.o",
+      "src/cMain.cpp"
+    ],
     "directory": "/hdd/Documents/Projects/Pyramid-gtk",
-    "file": "src/cApp.cpp",
-    "command": "g++  -Iinclude/ -I/usr/local/lib/wx/include/gtk3-unicode-3.1 -I/usr/local/include/wx-3.1 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__ -pthread  -std=c++20 -Wall -Wextra -g  -c src/cApp.cpp -o src/cApp.o"
-  },
-  {
-    "directory": "/hdd/Documents/Projects/Pyramid-gtk",
-    "file": "src/cMain.cpp",
-    "command": "g++  -Iinclude/ -I/usr/local/lib/wx/include/gtk3-unicode-3.1 -I/usr/local/include/wx-3.1 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__ -pthread  -std=c++20 -Wall -Wextra -g  -c src/cMain.cpp -o src/cMain.o"
+    "file": "/hdd/Documents/Projects/Pyramid-gtk/src/cMain.cpp",
+    "output": "/hdd/Documents/Projects/Pyramid-gtk/src/cMain.o"
   }
 ]

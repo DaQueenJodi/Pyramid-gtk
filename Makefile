@@ -6,7 +6,7 @@ program_OBJS			:=		$(program_CXX_OBJS)
 program_INCLUDE_DIRS	:=		include/
 program_LIBRARY_DIRS	:=
 program_LIBRARIES		:= 
-WX_LIBS				    :=		$(shell wx-config --libs)
+WX_LIBS				    :=		$(shell wx-config --libs all)
 WX_CFLAGS				:= 		$(shell wx-config --cflags)
 
 CXXFLAGS				+=		$(foreach includedir, $(program_INCLUDE_DIRS), -I$(includedir)) $(WX_CFLAGS)  -std=c++20 -Wall -Wextra -g 
