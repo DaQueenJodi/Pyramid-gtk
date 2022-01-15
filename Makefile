@@ -29,3 +29,7 @@ clean:
 	@- $(RM) $(program_CXX_OBJS)
 
 distclean: clean
+
+itlj: cpp_properties.json
+cpp_properties.json: 
+	$(LINK.cc) $(program_OBJS) -o $(program_NAME) $(LDLLIBS) $< --output $@
